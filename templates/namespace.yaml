@@ -4,6 +4,7 @@ metadata:
   name: vitalbridge
   labels:
     {{- include "vitalbridge.labels" . | nindent 4 }}
+    managed-by: helm
     pod-security.kubernetes.io/enforce: restricted
     pod-security.kubernetes.io/enforce-version: latest
     pod-security.kubernetes.io/warn: restricted
