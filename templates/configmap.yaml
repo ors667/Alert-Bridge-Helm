@@ -51,7 +51,7 @@ data:
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: vitalbridge-thresholds
+  name: alert-bridge-thresholds
   namespace: {{ .Release.Namespace }}
   labels:
     {{- include "vitalbridge.labels" . | nindent 4 }}
